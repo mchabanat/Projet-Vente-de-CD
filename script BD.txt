@@ -1,0 +1,49 @@
+-- Créer une table pour stocker les albums de musique
+CREATE TABLE CD (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    titre VARCHAR(255) NOT NULL,
+    auteur VARCHAR(255) NOT NULL,
+    genre VARCHAR(255) NOT NULL,
+    prix DECIMAL(10, 2) NOT NULL,
+    urlVignette VARCHAR(255) NOT NULL
+);
+
+
+-- Insérer des tuples dans la table
+INSERT INTO CD (titre,auteur,genre,prix,urlVignette)
+VALUES
+    ('Unlimited Love','Red Hot Chili Peppers','Rock',15.99,'https://m.media-amazon.com/images/I/91mjhjhxhVL._SL1500_.jpg'),
+    ('HEROES & VILLAINS','Metro Boomin','Rap',10.99,'https://www.goutemesdisques.com/uploads/tx_gmdchron/pi1/688d6f278d94e2d2f1a8917f2eded0bb.1000x1000x1.jpg'),
+    ('Jefe','Ninho','Rap',10,'http://cdn.shopify.com/s/files/1/0548/8554/8106/products/R_11.jpg?v=1655230453'),
+    ('Stadium Arcadium','Red Hot Chili Peppers','Rock',11.99,'https://is1-ssl.mzstatic.com/image/thumb/Music5/v4/5e/49/35/5e493511-d87b-5aa2-b379-30fffbae902b/093624932154.jpg/1200x1200bf-60.jpg'),
+    ('Nothing but the Beat','David Guetta','Electro',31.95,'https://m.media-amazon.com/images/I/91OKWPQcuEL._SL1500_.jpg'),
+    ('21','Adele','Pop',20,'https://m.media-amazon.com/images/I/61lMwNQGYbL._SL1200_.jpg'),
+    ('Greatest Hits','Queen','Rock',20,'https://m.media-amazon.com/images/I/51bguU4lgzL.jpg'),
+    ('Hot Rocks','Rolling Stones','Rock',17,'https://media.cdnws.com/_i/253556/2342/2574/45/disque-vinyle-hot-rocks-the-rolling-stones-album-compilation-cover.jpeg'),
+    ('The Blueprint','Jay-Z','Rap',12,'https://m.media-amazon.com/images/I/61pBwjWmy-L._SL1200_.jpg'),
+    ('Kind of Blue','Miles David','Jazz',15,'https://m.media-amazon.com/images/I/41G+cgWgJHL.jpg'),
+    ('Led Zeppelin IV','Led Zeppelin','Rock',17,'https://m.media-amazon.com/images/I/81evsr3Oq0L._SL1425_.jpg'),
+    ('The Chronic','Dr. Dre','Rap',18,'https://m.media-amazon.com/images/I/71mlUmU1TVL._SL1500_.jpg'),
+    ('The Joshua Tree','U2','Rock',18,'https://m.media-amazon.com/images/I/9192-4t9lfL._SL1500_.jpg'),
+    ('Hunky Dory','David Bowie','Rock',12,'https://m.media-amazon.com/images/I/A1FwYZichmL._SL1500_.jpg'),
+    ('My Beautiful Dark Twisted Fantasy','Kanye West','Rap',20,'https://m.media-amazon.com/images/I/71EYmWxcmdL._SY355_.jpg'),
+    ('24K Magic','Bruno Mars','Pop',15,'https://m.media-amazon.com/images/I/716mnZd24EL._SL1425_.jpg'),
+    ('Dark Side of the Moon','Pink Floyd','Rock',15,'https://m.media-amazon.com/images/I/41QfcId32+L.jpg'),
+    ('The Love Below','Outkast-Speakerboxxx','Rap',17,'https://m.media-amazon.com/images/I/81Wh-vUH7OL._SL1500_.jpg'),
+    ('Nevermind','Nirvana','Grunge',16,'https://m.media-amazon.com/images/I/91G5ndi8yFL._SL1500_.jpg'),
+    ('Lemonade','Beyoncé','R&B',18,'https://m.media-amazon.com/images/I/81QYCfKUAML._SY450_.jpg'),
+    ('Highway 61 Revisited','Bob Dylan','Rock',14,'https://m.media-amazon.com/images/I/71MjP7q-LjL._SL1500_.jpg'),
+    ('The Low End Theory','A Tribe Called Quest','Rap',16,'https://intrld.com/wp-content/uploads/2016/09/1ed2a8b06875441f85256b2f162fdf9b.png'),
+    ('The Bodyguard','Whitney Houston','R&B',12,'https://upload.wikimedia.org/wikipedia/en/0/03/Whitney_Houston_-_The_Bodyguard.png'),
+    ('Songs in a Mellow Mood','Ella Fitzgerald','Jazz',15,'https://m.media-amazon.com/images/I/31DRMWFKCQL.jpg'),
+    ('1989','Taylor Swift','Pop',15,'https://m.media-amazon.com/images/I/41DDvvI+lIL._SX425_.jpg'),
+    ('Legend','Bob Marley','Reggae',10,'https://m.media-amazon.com/images/I/71EFb-BEAeL._SL1400_.jpg'),
+    ('Abbey Road','The Beatles','Rock',15,'https://m.media-amazon.com/images/I/81sBKBIcwvL._SY355_.jpg'),
+    ('Thriller','Michael Jackson','Pop',20,'https://m.media-amazon.com/images/I/81ogsUqshzL._SL1500_.jpg'),
+    ('Songs in the Key of Life','Stevie Wonder','Soul',17,'https://m.media-amazon.com/images/I/715-vmTVuWL._SL1200_.jpg'),
+    ('The Marshall Mathers LP', 'Eminem', 'Rap', 14,'https://m.media-amazon.com/images/I/91E0tsoLNrL._SL1500_.jpg'),
+    ('The Business','Tiësto','Electro',15,'https://i.scdn.co/image/ab67616d0000b273f461bbc21a9bcec43a926973'),
+    ('Back in Black', 'AC/DC', 'Rock', 16,'https://i.discogs.com/U7AOOS-f96uIDPp_01CUDM6g6sCF13Wy2_Uu1ZE3jpI/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTY1NDU5/NzMtMTQyMTY5NDk0/Mi0yMjkwLmpwZWc.jpeg');
+
+
+

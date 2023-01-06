@@ -1,0 +1,342 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Dosis', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* ********************* Barre de nav ********************* */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(150, 150, 150);
+    padding: 10px 3%;
+}
+nav #bouton-nav {
+    text-decoration: none;
+    color: rgb(100, 100, 100);
+    background-color: white;
+    padding: 10px 10px;
+    margin: 0 15px;
+    border-radius: 15px;
+    width: 125px;
+    text-align: center;
+}
+
+nav .connected-container #power-active {
+    color: rgb(252, 213, 63);
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+nav .connected-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav .connected-container .options-container {
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+}
+
+#logoSite {
+    width: 100px;
+}
+#panier {
+    width: 50px;
+    height: 50px;
+}
+
+/* ********************* Page d'accueil ********************* */
+.au-centre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* *** Top *** */
+#top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    text-align: center;
+    margin: 30px 0;
+    font-size: 4em;
+}
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 3em;
+}
+
+/* *** Grille d'affichage des CD *** */
+h3 {
+    color: white;
+    padding: 50px 0;
+    font-size: 2em;
+}
+.unGenre {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(50, 50, 50);
+    margin: 35px 75px 3% 3%;
+    border-radius: 35px;
+    padding-bottom: 50px;
+}
+.genre-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.carte {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 25px;
+    background-color: white;
+    border-radius: 25px;
+    width: 250px;
+}
+#vignette {
+    padding: 3px;
+    margin: 35px 5px 5px 5px;
+    border: 1px solid black;
+}
+#titre {
+    font-weight: bold;
+    font-size: 1.5em;
+    text-align: center;
+}
+#auteur {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+#genre {
+    margin-bottom: 10px;
+}
+.boutons {
+    width: 100%;
+}
+
+.genre-container .carte .boutons a {
+    padding: 15px 0;
+    text-decoration: none;
+    background-color: rgb(100, 100, 100);
+    color: white;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.genre-container .carte .boutons .nonConnecte {
+    border-radius: 0 0 24px 24px;
+}
+.genre-container .carte .boutons .supprCD {
+    border-radius: 0 0 25px 25px;
+    background-color: red;
+}
+
+/* *** Infos d'un CD *** */
+.leCDDemande {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-bottom: 50px;
+}
+
+.leCDDemande > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 100px;
+}
+
+.infosCD-container {
+    flex-direction: column;
+
+}
+
+.leCDDemande .infosCD-container p {
+    font-size: 1.5em;
+    margin: 15px 0;
+}
+.leCDDemande .infosCD-container #titre-du-cd {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+#info-bouton-ajouter {
+    text-decoration: none;
+    color: white;
+    background-color: rgb(100, 100, 100);
+    padding: 10px 15px;
+    border-radius: 15px;
+    margin: 10px;
+}
+
+/* ********************* Connexion / Deconnexion admin ********************* */
+form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    justify-content: center;
+    margin: 50px 0;
+}
+
+/* ********************* Panier ********************* */
+#article-panier {
+    padding: 0 3%;
+    margin-bottom: 200px;
+}
+
+#panier-vide {
+    background-color: rgb(100, 100, 100);
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+    margin: 25px 0;
+    font-size: 1.3em;
+    color: white;
+}
+
+.unArticlePanier {
+    background-color: rgb(100, 100, 100);
+    display: grid;
+    grid-template-columns: 33% 29% 24% 14%;
+    align-items: center;
+    border-radius: 25px;
+    margin: 25px 0;
+    font-size: 1.3em;
+    color: white;
+}
+
+.unArticlePanier .infosAlbum {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 25px;
+}
+
+.unArticlePanier .infosAlbum p {
+    padding: 0 10px;
+}
+
+.unArticlePanier #gerer-quantite-container #bouton-qte {
+    background-color: white;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    text-decoration: none;
+    margin: 0 5px;
+    border-radius: 5px;
+    color: black;
+}
+
+.unArticlePanier #gerer-quantite-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.unArticlePanier #supprimer-du-panier {
+    text-decoration: none;
+    background-color: rgb(50, 50, 50);
+    color: white;
+    height: 100%;
+    border-radius: 0 25px 25px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.infosCommande {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid black;
+    border-radius: 25px;
+    margin: 25px 0;
+
+    font-size: 1.3em;
+}
+
+.infosCommande p {
+    padding: 10px 42px;
+}
+
+.infosCommande a {
+    text-decoration: none;
+    background-color: rgb(50, 50, 50);
+    color: white;
+    height: 100%;
+    border-radius: 0 25px 25px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 42px;
+    border: 1px solid rgb(50, 50, 50);
+}
+
+/* ********************* Paiement ********************* */
+#erreur_numero_carte {
+    color: red;
+}
+
+#infos-commande {
+    font-size: 1.5em;
+}
+
+#numero_carte {
+    text-align: center;
+}
+
+/* ********************* Effacer de la BD ********************* */
+.unArticleSuppr {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(100, 100, 100);
+    border-radius: 25px;
+    padding: 15px 0;
+    margin: 25px 3%;
+    font-size: 1.3em;
+    color: white;
+}
+
+#confirmation {
+    text-decoration: none;
+    color: white;
+    background-color: red;
+    padding: 10px 15px;
+    border-radius: 15px;
+    margin: 10px;
+}
+
+/* ********************* Footer ********************* */
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(150, 150, 150);
+    height: 150px;
+}
