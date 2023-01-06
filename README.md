@@ -1,4 +1,5 @@
 # Projet-Vente-de-CD
+## Description
 Projet de développement d'un site web de vente de CD en HTML/CSS/PHP. 
 Nous avons dû réaliser ce projet en 2e année de BUT Informatique mais je l'ai poursuivi pour rendre le site encore plus fonctionnel et puisque cela m'a interessé.
 
@@ -15,4 +16,4 @@ Lors de la sélection d’un titre on verra la pochette en taille réelle ainsi 
 Remarque : afin de minimiser les temps de transferts, les vignettes seront de réelles vignettes (images générées en format réduit) et non pas les images redimensionnées en CSS avec WIDTH/HEIGHT. 
 
 3/ Proposer un accès sécurisé avec un back NBoffice permettant l’ajout/suppression de CDs. 
-NB : Les CD pourront au choix être enregistrés sur une BD ( larkartx ela ) ou dans un fichier XML.
+NB : Les CD pourront au choix être enregistrés sur une BD ou dans un fichier XML.
