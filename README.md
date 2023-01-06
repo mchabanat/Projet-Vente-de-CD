@@ -4,7 +4,7 @@ Projet de développement d'un site web de vente de CD en HTML/CSS/PHP.
 Nous avons dû réaliser ce projet en 2e année de BUT Informatique mais je l'ai poursuivi pour rendre le site encore plus fonctionnel et puisque cela m'a interessé.
 
 ## Date 
-Projet à rendre pour le 07/01/2023
+Projet à rendre pour le 06/01/2023
 
 ## Consignes
 On souhaite proposer un site web de vente de CD en ligne. Chaque CD possède un genre, titre, auteur/groupe, prix et une image de la pochette.
