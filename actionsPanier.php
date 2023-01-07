@@ -26,8 +26,7 @@ if (isset($_SESSION['eltsPanier'])) {
                 unset($_SESSION['eltsPanier'][$id]);
                 break;
             case 4: // On vide le panier
-                // Réinitialisation du panier à un tableau vide
-                $_SESSION["eltsPanier"] = array();
+                unset($_SESSION['eltsPanier'][$id]);
                 break;
         }
         header("Location: panier.php");
