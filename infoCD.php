@@ -44,7 +44,7 @@
                 $url=$donnees["urlVignette"];
 
                 print "<div class=\"leCDDemande\">";
-                print "<div><img id=\"vignette\" src=\"traitementImage.php?url=$url&width=500&height=500\" alt=\"vignette $titre\"></div>";
+                print "<div><a href=\"$url\"><img id=\"vignette\" src=\"traitementImage.php?url=$url&width=500&height=500\" alt=\"vignette $titre\"></a></div>";
                 print "<div class=\"infosCD-container\">";
                 print "<p id=\"titre-du-cd\"><u>Titre</u> : $titre</p>";
                 print "<p id=\"auteur-du-cd\"><u>Auteur</u> : $auteur</p>";
