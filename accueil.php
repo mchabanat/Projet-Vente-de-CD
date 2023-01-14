@@ -71,7 +71,8 @@
                             }
                         } else {
                             print "<div class=\"boutons\">";
-                            print "<a class=\"nonConnecte\" href=\"ajouterPanier.php?id=$id\">Ajouter au panier (+{$prix}€)</a>";
+                            // print "<a class=\"nonConnecte\" href=\"ajouterPanier.php?id=$id\">Ajouter au panier (+{$prix}€)</a>";
+                            print "<a class=\"nonConnecte\"><div class=\"divAjouterAuPanier\" name=\"$id\">Ajouter au panier (+{$prix}€)</div></a>";
                             print "</div>";
                         }
                         print "</div>";
@@ -84,5 +85,6 @@
     <?php
     include 'templates/footer.php';
     ?>
+    <script src="JS/addToCart.js"></script>
 </body>
 </html>

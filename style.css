@@ -137,7 +137,6 @@ h3 {
 }
 
 .genre-container .carte .boutons a {
-    padding: 15px 0;
     text-decoration: none;
     background-color: rgb(100, 100, 100);
     color: white;
@@ -147,6 +146,15 @@ h3 {
     justify-content: center;
 }
 .genre-container .carte .boutons .nonConnecte {
+    border-radius: 0 0 24px 24px;
+}
+.genre-container .carte .boutons .nonConnecte .divAjouterAuPanier {
+    cursor: pointer;
+    padding: 15px 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-radius: 0 0 24px 24px;
 }
 .genre-container .carte .boutons .supprCD {
