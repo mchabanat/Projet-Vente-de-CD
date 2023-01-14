@@ -65,14 +65,13 @@
                         if (isset($_SESSION['login']) && isset($_SESSION['pwd'])){
                             if ($_SESSION['login'] == "admin" && $_SESSION['pwd'] == "admin") {
                                 print "<div class=\"boutons\">";
-                                print "<a class=\"connecte\" href=\"ajouterPanier.php?id=$id\">Ajouter au panier (+{$prix}€)</a>";
+                                print "<a id=\"btnAjouterAuPanier\" class=\"connecte\"><div class=\"divAjouterAuPanier\" name=\"$id\">Ajouter au panier (+{$prix}€)</div></a>";
                                 print "<a class=\"supprCD\" href=\"confirmSuppr.php?id=$id\">Supprimer le CD</a>";
                                 print "</div>";
                             }
                         } else {
                             print "<div class=\"boutons\">";
-                            // print "<a class=\"nonConnecte\" href=\"ajouterPanier.php?id=$id\">Ajouter au panier (+{$prix}€)</a>";
-                            print "<a class=\"nonConnecte\"><div class=\"divAjouterAuPanier\" name=\"$id\">Ajouter au panier (+{$prix}€)</div></a>";
+                            print "<a id=\"btnAjouterAuPanier\" class=\"nonConnecte\"><div class=\"divAjouterAuPanier\" name=\"$id\">Ajouter au panier (+{$prix}€)</div></a>";
                             print "</div>";
                         }
                         print "</div>";

@@ -1,5 +1,5 @@
 // Ajouter au panier
-var mesBoutonsAddToCart = document.querySelectorAll(".nonConnecte");
+var mesBoutonsAddToCart = document.querySelectorAll("#btnAjouterAuPanier");
 
 for(var i=0 ; i < mesBoutonsAddToCart.length ; i++) {
     mesBoutonsAddToCart[i].addEventListener('click', e=>{
